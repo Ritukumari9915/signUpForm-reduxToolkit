@@ -1,0 +1,241 @@
+$primaryColor:#000080;
+// $color:#fff;
+// $borderColor:#000080;
+
+
+*{
+    box-sizing: border-box;
+    margin:0;
+    padding: 0;
+}
+.inputBox{
+  padding-bottom: 1rem;
+}
+.wrapper{
+    margin: 0 auto;
+   padding: 2rem;
+  width: 30%;
+
+  align-items: center;
+  height:auto;
+  margin-top: 8rem;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+  border-radius: 10px;
+}
+.header{
+text-align: center;
+padding-bottom: 20px;
+}
+.nameCont{
+display: flex;
+gap: 15px;
+
+}
+input{
+  width: 100%;
+  padding: 8px;
+  
+}
+button{
+  background: $primaryColor;
+  width: 100%;
+  padding: 12px;
+  border: none;
+  border-radius: 3px !important;
+  color: #fff;
+  margin-bottom: 1rem;
+}
+.signGoogle{
+background-color: #fff; 
+border: 1px solid lightgrey;
+}
+
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 50px;
+  height: 28px;
+}
+.switch input { 
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 20px;
+  width: 20px;
+  left: 4px;
+  bottom: 4px;
+  background-color: white;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+input:focus{
+  outline: 1px solid $primaryColor; 
+  // border: none;
+}
+input:checked + .slider {
+  background-color: $primaryColor;
+  color: #fff;
+}
+
+input:focus + .slider {
+  box-shadow: 0 0 1px $primaryColor !important;
+  
+}
+
+input:checked + .slider:before {
+  -webkit-transform: translateX(26px);
+  -ms-transform: translateX(26px);
+  transform: translateX(26px);
+}
+
+.slider.round {
+  border-radius: 34px;
+}
+
+.slider.round:before {
+  border-radius: 50%;
+}
+
+a{
+  text-decoration: none !important;
+  color: $primaryColor!important;
+  font-weight: bold !important;
+}
+.login-with-google-btn{
+  transition: background-color .3s, box-shadow .3s;
+    
+  padding: 12px 16px 12px 42px;
+  border: none;
+  border-radius: 3px;
+  box-shadow: 0 -1px 0 rgba(0, 0, 0, .04), 0 1px 1px rgba(0, 0, 0, .25);
+  
+  color: #757575;
+  font-size: 14px;
+  font-weight: 500;
+  font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Oxygen,Ubuntu,Cantarell,"Fira Sans","Droid Sans","Helvetica Neue",sans-serif;
+  
+  background-image: url(data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTgiIGhlaWdodD0iMTgiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGcgZmlsbD0ibm9uZSIgZmlsbC1ydWxlPSJldmVub2RkIj48cGF0aCBkPSJNMTcuNiA5LjJsLS4xLTEuOEg5djMuNGg0LjhDMTMuNiAxMiAxMyAxMyAxMiAxMy42djIuMmgzYTguOCA4LjggMCAwIDAgMi42LTYuNnoiIGZpbGw9IiM0Mjg1RjQiIGZpbGwtcnVsZT0ibm9uemVybyIvPjxwYXRoIGQ9Ik05IDE4YzIuNCAwIDQuNS0uOCA2LTIuMmwtMy0yLjJhNS40IDUuNCAwIDAgMS04LTIuOUgxVjEzYTkgOSAwIDAgMCA4IDV6IiBmaWxsPSIjMzRBODUzIiBmaWxsLXJ1bGU9Im5vbnplcm8iLz48cGF0aCBkPSJNNCAxMC43YTUuNCA1LjQgMCAwIDEgMC0zLjRWNUgxYTkgOSAwIDAgMCAwIDhsMy0yLjN6IiBmaWxsPSIjRkJCQzA1IiBmaWxsLXJ1bGU9Im5vbnplcm8iLz48cGF0aCBkPSJNOSAzLjZjMS4zIDAgMi41LjQgMy40IDEuM0wxNSAyLjNBOSA5IDAgMCAwIDEgNWwzIDIuNGE1LjQgNS40IDAgMCAxIDUtMy43eiIgZmlsbD0iI0VBNDMzNSIgZmlsbC1ydWxlPSJub256ZXJvIi8+PHBhdGggZD0iTTAgMGgxOHYxOEgweiIvPjwvZz48L3N2Zz4=);
+  background-color: white;
+  background-repeat: no-repeat;
+  background-position: 12px 11px;
+  
+  &:hover {
+    box-shadow: 0 -1px 0 rgba(0, 0, 0, .04), 0 2px 4px rgba(0, 0, 0, .25);
+  }
+  
+  &:active {
+    background-color: #eeeeee;
+  }
+  
+  &:focus {
+    outline: none;
+    
+  }
+  
+  
+}
+
+.login-with-facebook-btn {
+  display: flex;
+  align-items: center; /* Align items vertically in the center */
+  justify-content: center; /* Center content horizontally */
+  gap: 0.5rem; /* Adjust the space between icon and text */
+  
+  padding: 0.5rem 1rem;
+  border: none;
+  background-color: #fff;
+  color: #757575;
+  // border-radius: 5px;
+  cursor: pointer;
+  transition: background-color .3s, box-shadow .3s;
+  border-radius: 3px;
+  box-shadow: 0 -1px 0 rgba(0, 0, 0, .04), 0 1px 1px rgba(0, 0, 0, .25);
+
+
+.icon-wrapper {
+  display: flex;
+  align-items: center;
+  color: $primaryColor;
+}
+
+.icon {
+  width: 20px; /* Adjust icon size as needed */
+  height: 20px;
+}
+
+.text {
+  flex-grow: 1; /* Allow text to occupy remaining space */
+  text-align: center; /* Center text horizontally */
+}
+
+
+&:hover {
+  box-shadow: 0 -1px 0 rgba(0, 0, 0, .04), 0 2px 4px rgba(0, 0, 0, .25);
+}
+
+&:active {
+  background-color: #eeeeee;
+}
+
+&:focus {
+  outline: none;
+  
+}
+
+}
+.toggle{
+  display: flex;
+justify-content: space-between;
+}
+.back-to-login{
+text-align: center;
+padding-top: 20px;
+}
+
+.passwordLock{
+  text-align: center;
+  padding-bottom: 20px;
+}
+.keylogo{
+// width: 100px;
+// height: 100px;
+text-align: center;
+color: #000080;
+}
+
+
+form{
+  width: 30%;
+  margin: 4rem auto;
+}
+table, th, td {
+  border: 1px solid black;
+  border-collapse: collapse;
+  width: 50%;
+  padding: 10px;
+  margin: 0 auto;
+  margin-top: 4rem;
+}
+
+
+
+
+
+
